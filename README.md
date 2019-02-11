@@ -6,7 +6,7 @@ email: <mujahid.hkhan@yahoo.in>
 ## Overview
 
 This project currently contains only single screen that shows weather forecast for the next five days of the city specified.
-It uses API for the OpenWeather.org to fetch the data. Data from the API contains 3 hourly data, however, app currently
+It uses API from the OpenWeather.org to fetch the data. Data from the API contains 3 hourly data, however, app currently
 shows only single record for a date.
 
 ## Architecture
