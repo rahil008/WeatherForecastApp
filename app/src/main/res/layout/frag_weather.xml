@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <TextView
+        android:id="@+id/dateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:shadowColor="@android:color/white"
+        android:shadowDy="1"
+        android:shadowDx="1"
+        android:shadowRadius="2"
+        android:layout_margin="16dp"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:id="@+id/tempParent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/tempText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="@android:color/white"
+            android:shadowDy="1"
+            android:shadowDx="1"
+            android:shadowRadius="2"
+            android:text="64"
+            android:textSize="100sp" />
+
+        <TextView
+            android:id="@+id/tempUnitText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tempText"
+            android:layout_toRightOf="@+id/tempText"
+            android:shadowColor="@android:color/white"
+            android:shadowDy="1"
+            android:shadowDx="1"
+            android:shadowRadius="2"
+            android:text="C"
+            android:textSize="50sp" />
+
+        <ImageView
+            android:id="@+id/weatherImage"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_alignBottom="@+id/tempText"
+            android:layout_toRightOf="@+id/tempText"
+            android:scaleType="centerInside"
+            android:shadowColor="@android:color/white"
+            android:shadowDy="1"
+            android:shadowRadius="2" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/dataParent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tempParent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="32dp">
+
+
+        <TextView
+            android:id="@+id/weatherText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="@android:color/white"
+            android:shadowDy="1"
+            android:shadowDx="1"
+            android:shadowRadius="2"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/weatherDataText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/weatherText"
+            android:shadowColor="@android:color/white"
+            android:shadowDy="1"
+            android:shadowDx="1"
+            android:shadowRadius="2"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
